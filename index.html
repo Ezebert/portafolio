@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/sryles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/0da744dd98.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!-- Tipografia -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100;1,700&display=swap" rel="stylesheet">
     <title> Bertinat Ezequiel - Portabolio </title>    
 </head>
   <!-- Cabezera -->
@@ -13,12 +18,14 @@
         <header>
             <nav class="navbar">
                 <div class="brand">
-                    <h2> E<span>B</span> </h2>
+                    <h2> <a href="INICIO"></a> E<span>B</span> </h2>
                 </div>
                 <ul class="menu">
-                    <li><a href="#"> Inicio</a></li>
-                    <li><a href="#"> Sobre Mi</a></li>
-                    <li><a href="#"> Mis Proyectos</a></li>
+                    <li><a class="active" href="#INICIO"> Inicio</a></li>
+                    <li><a href="#SOBREMI"> Sobre Mi</a></li>
+                    <li><a href="#PROYECTOS"> Mis Proyectos</a></li>
+                    <li><a href="#CONTACTO"> Contacto</a></li>
+                    <li><a href="#REDES"> Redes Sociales</a></li>
                 </ul>
  
             </nav>
@@ -26,7 +33,7 @@
         <!-- Main -->
         <main class="main">
         <!-- INFO INICIAL -->
-        <div class="info-content">
+        <section id="INICIO" class="info-content">
             <h1>Ezequiel <span>Bertinat</span></h1>
             <p>Soy estudiante de tecnicatura en programacion UTN, cursando el 3er cuatrimestre de forma online. Tengo conocimiento en c++, c#, HTML, css </p>
             <a download href="#">
@@ -34,12 +41,12 @@
 
             </a>
             
-        </div>
+        </section>
         <img src="https://media.licdn.com/dms/image/v2/D4D03AQEFT3cFyJM28g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721688287574?e=1732752000&v=beta&t=LJQAV3xezv2X7bkm2-Rjfki_23oMawrrXt4eGbvMDOI" alt="Imagen Perfil" srcset="">
         </main>
          <!-- SOBRE MI -->
     </div>
-    <div class="Sobre-mi">
+    <section id="SOBREMI" class="Sobre-mi">
         <img src="https://media.licdn.com/dms/image/v2/D4D03AQEFT3cFyJM28g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721688287574?e=1732752000&v=beta&t=LJQAV3xezv2X7bkm2-Rjfki_23oMawrrXt4eGbvMDOI" alt="Imagen Perfil" >    
     
         <div class="Sobre-mi-info">
@@ -49,9 +56,9 @@
         <p>Soy de Talar de pacheco del partido de tigre, además de la programación tengo como pasatiempo ir de pesca        </p>
         <button class="download-cv">Read Me</button>
         </div>        
-    </div>
+    </section>
     <!-- PORTAFOLIO -->
-    <div class="portafolio">
+    <section id="PROYECTOS" class="portafolio">
         <div class="portafolio-head">
             <h2> Mis Proyectos</h2>
             <div class="dividir"></div>
@@ -90,9 +97,6 @@
                     <a href="https://github.com/fideespinosa/TPWinForm_Equipo10A.git" target="_blank">
                         <i class="fa fa-github" aria-hidden="true"></i>
                     </a>
-                    <a href="">
-                        <i class="fa fa-code" aria-hidden="true"></i>
-                    </a> 
                 </div>
                 <div class="proyecto-detalle-content">
                     <button class="proyecto-detalle download-cv">
@@ -113,22 +117,20 @@
                     <a href="https://github.com/fideespinosa/TPWinForm_Equipo10A.git" target="_blank">
                         <i class="fa fa-github" aria-hidden="true"></i>
                     </a>
-                    <a href="">
-                        <i class="fa fa-code" aria-hidden="true"></i>
-                    </a> 
                 </div>
                 <div class="proyecto-detalle-content">
                     <button class="proyecto-detalle download-cv">
-                        <a href="">
-                            Detalle
+                        <a href="https://github.com/fideespinosa/TPWinForm_Equipo10A.git" target="_blank">
+                            <i class="fa fa-github" aria-hidden="true"></i>
                         </a>
                     </button>
                 </div>
     
             </div>
         </div>
-    </div>
-    <div class="contacto">
+    </section>
+    <!-- CONTACTO -->
+    <section id="CONTACTO" class="contacto">
         <div class="contacto-head">
             <h2> Contacto </h2>
             <div class="dividir"></div>
@@ -144,12 +146,29 @@
                     <button type="submit" class="btnEnviar"> 
                         Enviar
                     </button>
-
                 </form>
-
             </div>
         </div>
-    </div>
+    </section>
+    <footer id="REDES" class="footer">
+        <div class="footer-contenedor">
+            <h2>Bertinat Ezequiel</h2>
+            <h4>Estudiante Programacion</h4>
+        </div>
+        <div class="RedesSociales">
+            <a href="https://www.linkedin.com/in/ezebertinat/">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/eze.bertinat/">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/Ezebert">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            
+        </div>
+
+    </footer>
 
 </body>
 </html>
