@@ -5,8 +5,7 @@
     box-sizing: border-box;
 
 }
-.wrapper,
-.portafolio {
+.wrapper {
     width: 100vw;
     height: 100vh;
     background-color: #191c32;
@@ -108,6 +107,10 @@ span{
     margin-top: 10px;
     margin-bottom: 3em;
 }
+.portafolio{
+    width: 100vw;
+    background-color: #191c32;
+}
 .portafolio-head{
     width: 100vw;
     padding: 5em;
@@ -125,8 +128,10 @@ justify-content: center;
 }
 .card {
     width: 300px;
-    background-color: #2b3058;
-
+    height: 350px;
+    background-color: #1b2258;
+    color: #fff;
+    margin: 1em;
 }
 .card__img{
     width: 100%;
@@ -159,5 +164,4 @@ justify-content: center;
     display: flex;
     width: 100%;
     justify-content: center;
-
 }
